@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FormExercise</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form action="http://www.wikipedia.org">
+
+	<div>
+		<label for="firstname">First Name:</label>
+		<input type="text" name="name" id="firstname" placeholder="John" required></input>
+
+		<label for="lastname">Last Name:</label>
+		<input type="text" name="name" id="lastname" placeholder="Smith" required></input>
+	</div>
+
+	<div> <!-- gender -->
+		<label for="male">Male</label><input type="radio" name="gender" id="male"></input>
+		<label for="female">Female</label><input type="radio" name="gender" id="female"></input>
+		<label for="other">Other</label><input type="radio" name="gender" id="other"></input>
+	</div>
+
+	<div> <!-- email & password-->
+		<label for="email">Email:</label><input type="email" name="email" id="email" placeholder="your email" required="true"></input>
+		<label for="password">Password</label><input type="password" name="password" id="password" minlength="5" maxlength="10"></input>
+	</div>
+
+	<div> <!-- DOB -->
+		<label for="DOB">Birthday:</label>
+		<select id="DOB" name="m">
+			<option>month</option>
+			<option>Jan</option>
+			<option>Feb</option>
+		</select>
+		<select id="DOB" name="d">
+			<option>day</option>
+			<option>01</option>
+			<option>02</option>
+		</select>
+		<select id="DOB" name="y">
+			<option>year</option>
+			<option>1994</option>
+			<option>1995</option>
+		</select>
+	</div>
+
+	<div> <!-- terms & conditions -->
+		<label>I agree to the terms and conditions<input type="checkbox" name="tAndC"></input></label>
+	</div>
+
+
+	<button type="submit">Submit</button>
+	</form>
+
+</body>
+</html>
